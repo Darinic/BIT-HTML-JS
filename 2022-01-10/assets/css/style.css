@@ -1,0 +1,13 @@
+.spacer {
+    height: 3000px;
+    background-color: pink;
+}
+body {
+    margin: 0;
+}
+
+.demo {
+    height: 100vh;
+    background-color: powderblue;
+    ;
+}

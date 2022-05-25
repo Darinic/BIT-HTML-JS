@@ -1,0 +1,142 @@
+body {
+  height: 900vh;
+  width: 100%;
+  background: rgb(52, 52, 163);
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 20px;
+}
+.intro {
+  padding-left: 30%;
+  padding-right: 30%;
+  text-align: justify;
+  font-size: 18px;
+}
+.intropic {
+  height: 300px;
+  width: 400px;
+}
+.nuotrauka {
+  text-align: center;
+}
+.spacer1 {
+  height: calc(10vh);
+}
+.demo1 {
+  text-align: justify;
+  font-size: 18px;
+  background-size: 100vh;
+  background-color: rgb(39, 97, 39);
+  padding: 10% 30% 0 30%;
+}
+.spacer2 {
+  height: 25vh;
+  background-color: rgb(39, 97, 39);
+}
+.demo2 {
+  background-color: darkorange;
+  text-align: justify;
+  padding: 10% 30% 20% 30%;
+}
+.demo2pic {
+  height: 200px;
+  width: 200px;
+}
+h2 {
+  color: red;
+  font-weight: 28px;
+  font-family: fantasy;
+  text-align: center;
+  word-spacing: 5px;
+}
+.demo3 {
+  background-color: rgb(230, 240, 138);
+  height: 70vh;
+  text-align: justify;
+  padding: 15% 30% 5% 30%;
+}
+.demo4 {
+  background-color: rgb(245, 158, 238);
+  height: 70vh;
+  text-align: justify;
+  padding: 10% 30% 10% 30%;
+}
+.ainuotrauka {
+  padding-top: 10px;
+}
+.demo5 {
+  background-color: rgb(196, 240, 179);
+  height: 70vh;
+  text-align: justify;
+  padding: 10% 30% 5% 30%;
+}
+.demo6 {
+  background-color: rgb(154, 188, 240);
+  height: 90vh;
+  text-align: justify;
+  padding: 10% 30% 5% 30%;
+}
+.demo7 {
+  background-color: rgb(189, 144, 247);
+  height: 90vh;
+  text-align: justify;
+  padding: 5% 30% 5% 30%;
+}
+.demo8 {
+  background-color: rgb(104, 235, 133);
+  height: 90vh;
+  text-align: justify;
+  padding: 5% 30% 5% 30%;
+}
+.techno {
+  height: 80%;
+  width: 80%;
+}
+.mobile {
+  height: 80%;
+  width: 80%;
+}
+.navigation {
+  text-align: center;
+  font-size: 20px;
+}
+
+.navbar {
+  list-style-type: none;
+  padding-top: 10px;
+}
+li {
+  background-color: azure;
+  display: inline;
+  border-radius: 5px;
+  border: black 2px solid;
+  padding: 5px;
+}
+.scroll-top {
+  position: absolute;
+  top: 120vh;
+  bottom: 3rem;
+  right: 2rem;
+}
+.scroll-top__link {
+  position: sticky;
+  top: 90vh;
+  color: rgb(0, 0, 0);
+  border: 1px black solid;
+  background-color: red;
+  padding: 8px;
+  border-radius: 15px;
+}
+main {
+  position: relative;
+}
+section {
+  height: 980vh;
+}

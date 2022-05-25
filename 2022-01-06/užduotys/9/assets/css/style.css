@@ -1,0 +1,31 @@
+html, body {
+    background: linear-gradient(to bottom right, #6889FF, #C668FF);
+    height: 100%;
+    margin: 0;
+    padding: 15px;
+    width: calc(100%-15px);
+}
+.divs {column-count: 2;
+text-align: justify;
+line-height: 15px;}
+
+.lorem1 {
+    float: left;
+    height: 130px;
+    padding: 10px;
+    width: 150px;
+}
+.lorem3 {
+    float: right;
+    padding: 10px;
+    width: 150px;
+}
+.lorem5 {
+    float: left;
+    padding: 10px;
+    width: 130px;
+}
+.section::before,
+.section::after {
+    content: "";
+}

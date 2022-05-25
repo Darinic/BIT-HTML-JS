@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function randomSkaicius(min, max) { 
+    return Math.floor(Math.random() * (max - min + 1) + min)
+  }
+        let masyvas = [];
+// Pirmas variantas raidei paimti
+// let simboliai = 'ABCD' 
+// console.log(simboliai.charAt(2))
+
+let simboliai = ['A', 'B', 'C', 'D'];
+// console.log(simboliai[randomSkaicius(0, simboliai.length -1)])
+
+for(let i= 0;i<200; i++) {
+    const skaicius = randomSkaicius(0, simboliai.length -1)
+    const simbolis= simboliai[skaicius]
+
+    masyvas.push(simbolis)
+}
+console.log(masyvas)
+console.log('____ANTRA UZDUOTIS____')
+masyvas.sort()
+console.log(masyvas)
+console.log('____TRECIA UZDUOTIS____')
+
+function masyvoGeneravimas() {
+    let masyvas = [];
+    let simboliai = ['A', 'B', 'C', 'D'];
+
+for(let i= 0;i<200; i++) {
+    const skaicius = randomSkaicius(0, simboliai.length -1)
+    const simbolis= simboliai[skaicius]
+
+    masyvas.push(simbolis)
+}
+return masyvas
+}
+
+let pirmas_masyvas = masyvoGeneravimas();
+let antras_masyvas = masyvoGeneravimas();
+let trecias_masyvas = masyvoGeneravimas();
+let kombinuotas_masyvas = [];
+let skaiciuotuvas = 0
+console.log(masyvas)
+
+pirmas_masyvas.forEach((value, indeksas) => {
+
+    if(pirmas_masyvas[indeksas] != antras_masyvas[indeksas]
+        && antras_masyvas[indeksas] != trecias_masyvas[indeksas]
+        && trecias_masyvas[indeksas] != pirmas_masyvas[indeksas])
+        skaiciuotuvas++
+
+    kombinuotas_masyvas.push(
+        value + antras_masyvas[indeksas] + trecias_masyvas[indeksas])
+    // kombinuotas_masyvas[indeksas] = pirmas_masyvas[indeksas] + antras_masyvas[indeksas] + trecias_masyvas[indeksas]
+})
+// console.log(kombinuotas_masyvas)
+// console.log(skaiciuotuvas)
+let unique= kombinuotas_masyvas.filter((value, key, array) =>{
+    return array.indexOf(value) === key
+})
+console.log(unique.length)
+console.log(kombinuotas_masyvas.length)
+console.log(unique)
+console.log(skaiciuotuvas)
+//4 uzduotis
+
+const generateUniqueArray= () => {
+    let masyvas = []
+while(true) {
+    let skaicius= randomSkaicius(100, 999);
+    // let antras_skaicius= randomSkaicius(100, 999);
+
+    if(!masyvas.includes(skaicius))
+    masyvas.push(skaicius);
+
+    if(masyvas.length >= 100) 
+        return masyvas
+    // if(!antras_masyvas.includes(antras_skaicius))
+    // antras_masyvas.push(antras_skaicius)
+}
+    return false
+}
+pirmas_masyvas = generateUniqueArray();
+antras_masyvas = generateUniqueArray();
+
+console.log(pirmas_masyvas);
+console.log(antras_masyvas);
+
+pirmas_masyvas = generateUniqueArray();
+antras_masyvas = generateUniqueArray();
+masyvas = [];
+
+for(let i= 0; i <pirmas_masyvas.length; i++) {
+    if(!antras_masyvas.includes(pirmas_masyvas[i]))
+    masyvas.push(pirmas_masyvas[i])
+}
+console.log(masyvas)
+
+//6 uzduotis
+masyvas = [];
+
+for(let i= 0; i < pirmas_masyvas.length; i++) {
+    if(antras_masyvas.includes(pirmas_masyvas[i]))
+    masyvas.push(pirmas_masyvas[i])
+}
+console.log(masyvas)
+    </script>
+    <script src="./assets/javascript/index.js"></script>
+</body>
+</html>

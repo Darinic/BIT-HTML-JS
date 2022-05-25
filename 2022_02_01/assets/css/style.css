@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.box {
+    background-color: rgb(204, 245, 245);
+    border: 1px solid;
+    display: block;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 5px 5px;
+    width: 270px;
+}
+.box span {
+    font-size: 18px;
+    font-weight: bold;
+}
+.uzduotis6 {
+    background-color: rgb(253, 236, 0);
+    border: dotted 2px ;
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 190px;
+
+}
+.uzduotis6 ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 10px;
+}
+.uzduotis6 ul li span {
+    font-size: 20px;
+    font-weight: bold;
+}
+.uzduotis7 {
+    background-color: blanchedalmond;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    height: 150px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 8px 10px;
+    width: 200px;
+}
+.button {
+    background-color:rgb(185, 212, 212);
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-left: 18%;
+    margin-bottom: 8px;
+    margin-top: 3px;
+    padding: 5px 10px;
+    text-align: center;
+}
+.button3 {
+   margin: 0;
+   margin-bottom: 8px;
+   font-size: 14.1px;
+   background-color: azure;
+}
+.button2 {
+    background-color: rgb(196, 255, 252);
+    border: 1px solid;
+    font-size: 13px;
+    font-weight: bolder;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.uzduotys {
+    display: block;
+    background-color: rgb(228, 216, 201);
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 15px;
+    margin: 10px 20px 10px 20px;
+}

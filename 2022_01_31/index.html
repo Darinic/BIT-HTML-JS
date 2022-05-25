@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript pagrindai</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        .klase {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="rezultatas">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto dicta natus voluptas id deserunt, autem dolorum sunt animi? Similique voluptatibus dolore accusantium aut omnis dolores, officia perspiciatis voluptas libero! Eum quas sequi voluptatem maxime nulla explicabo. Dignissimos consectetur, excepturi illo, inventore consequuntur fugit ipsum officiis optio facilis voluptatem soluta laboriosam.
+    </div>
+
+    <div class="randoms">
+        <h3>reikšmės</h3>
+        x = <span id="xSkaicius"></span> <br/>
+        y = <span id="ySkaicius"></span> <br/>
+        <div class="skaiciavimai">
+            <ul>
+                <li>Sudetis (x + y) = <span id="xSudetis"></span> </li>
+                <li>Atimtis (x - y) = <span id="xAtimtis"></span> </li>
+                <li>Dalyba (x / y) = <span id="xDalyba"></span> </li>
+                <li>Daugyba (x * y) = <span id="xDaugyba"></span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="KetvUzduotis">
+        <h3>4 užduotis</h3>
+        variable 1 =<span id="cSkaicius"></span> <br/>
+        variable 2 =<span id="vSkaicius"></span> <br/>
+        variable 3 =<span id="bSkaicius"></span> <br/>
+        Middle number = <span id="mNumber"></span>
+    </div>
+    <script type="text/javascript" src="assets/js/index.js"></script>
+    <script type="text/javascript">
+        //Kintamasis-variable
+        //kintamuju pavadinimai turi buti nurodyti identiški, didžiosiomis ir mažosiomis raidėmis (case Sensitive)
+        //Sukuriame kintamaji ir priskiriame jam reiskme kuri yra stringas
+        var pirmasisKintamasis= 'Labas Pasauli';
+        //stringas yra paprastas textas
+        pirmasisKintamasis = 'Ate pasauli'
+        alert(pirmasisKintamasis)
+        //Javascripte galiem naudoti trijų tipų kabutes:
+        //Viengubas '' -jei neturim dubliavimo
+        //Dvigubas ""- atvirkštiniai neu su viengubomis
+        //Paverstas kabutes ``- kai norim tekste panaudoti kintamuosius
+        var x = 12 //Integer reiksme
+        var rezultatas
+        //sudetis
+        rezultatas =  x + 2; //prskiriame reikšmę po sudeties
+        console.log(rezultatas);
+
+        //atimtis
+        rezultatas= x - 2; //priskiriame reiskme po atimties
+        console.log(rezultatas);
+
+        //Daugyba
+        rezultatas = x * 2;//priskiriame reiskme po dauginimo
+        console.log(rezultatas);
+
+        //Dalyba
+        rezultatas = x / 2;//priskiriame reiskme po dalybos
+        console.log(rezultatas);
+
+        var pirmasStringas='Pirmas stringas'
+        var antrasStringas=', Antras stringas'
+
+        console.log(pirmasStringas + antrasStringas)
+        //Objekta
+        var objektas = {}
+        //Masyvas
+        var masyvas = []
+    </script>
+</body>
+</html>

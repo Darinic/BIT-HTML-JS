@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .flex {
+            display:flex;
+            height: 100vh;
+            flex-wrap: wrap;
+            align-items: stretch;
+        }
+        .item {
+            width: 100px;
+            flex-grow: 1;
+        }
+        .item:nth-child(3) {
+            width: 20px;
+        }
+        /* Justify-content- horizontalus rikiavimas */
+        /* allign-items-  vertikalus rikiavimas */
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ipsa.
+        </div>
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ipsa.
+        </div>
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ipsa.
+        </div>
+    </div>
+</body>
+</html>

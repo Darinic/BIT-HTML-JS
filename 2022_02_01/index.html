@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body style="height: 1000vh;">
+    <input type="text" id="skaicius">
+    <button id="submit" onclick="alert('Labas pasauli')">Submit</button>
+    <div id="rezultatas"></div>
+    <div class="uzduotys">
+        <p>5.Sugeneruokite atsitiktinį skaičių (nebūtinai sveiką) ir jį atvaizduokite savo puslapyje.</p>
+        <p>6.Atspausdinkite tris skaičius nuo -10 iki 10 pasinaudodami ta pačia funkcija. Skaičiai mažesni už 0 turi būti pažymėti raudonai, 0 mėlynai, o didesni už nulį žalia spalva.</p>
+        <p>7.Įmonė parduoda žvakes po 1 EUR. Perkant daugiau kaip už 1000 EUR taikoma 3 % nuolaida, daugiau kaip už 2000 EUR - 4 % nuolaida. Parašykite programą, kuri skaičiuos žvakių kainą ir atspausdintų atsakymą kiek žvakių ir kokia kaina perkama. Žvakių kiekį generuokite aukščiau pateikta ​ funkcija parametrais nuo 5 iki 3000. </p>
+        <p>8.Sukurkite navigacijos paslinkimo animaciją pagal xlander puslapio demo panaudojant “scroll” eventListener.</p>
+        <p>9.Paleiskite 5-os, 6-os ir 7-os užduoties operacijas paspaudus susikurtą mygtuką. </p>
+    </div>
+    <div class="box">
+        <button class="button" onclick="generuoti()">Sugeneruoti numerį</button> <br/>
+        Atsitiktinis numeris (nuo 0 iki 25) = <span id="rNumeris"></span>
+    </div>
+    <div class="uzduotis6">       
+        <ul>
+            <button class="button button3" onclick="generuotii()">Sugeneruoti numerius</button>
+            <li>Random Numer 1 = <span id="RNumberQ"></span></li>
+            <li>Random Numer 2 = <span id="RNumberW"></span></li>
+            <li>Random Numer 3 = <span id="RNumberE"></span></li>
+        </ul>
+    </div>
+    <div class="uzduotis7">
+        <button class="button button2" onclick="generuotis()">Sugeneruoti žvakių kiekį</button>
+        Žvakių kiekis = <span id="zvakiuSk"></span> <br/>
+        Kaina už vieną žvakę = <span id="sum"></span>€ <br/>
+        Suma = <span id="zvakiuSuma"></span>€ <br/>
+        Sutaupote = <span id="Sutaupote"></span>€
+    </div>
+    <script type="text/javascript" src="assets/js/index.js"> </script>
+</body>
+</html>

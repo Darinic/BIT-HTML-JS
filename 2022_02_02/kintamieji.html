@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="uzduotys">
+        <p>10. Sukurkite keturis kintamuosius ir ​randomSkaicius()​ funkcija sugeneruokite jiems
+            reikšmes nuo 0 iki 2. Suskaičiuokite kiek yra nulių, vienetų ir dvejetų. (sprendimui masyvo nenaudoti). </p>
+        <p>11.Naudokite funkcija randomSkaicius()​. Sugeneruokite atsitiktinį skaičių nuo 1 iki 6 ir jį atspausdinkite
+            atitinkame h tage.
+            Pvz skaičius 3- rezultatas: h3 3 h3 </p>
+        <p>12.Naudokite funkcija randomSkaicius()​. Sukurkite tris kintamuosius su atsitiktinėm reikšmėm nuo 0 iki 100.
+            Paskaičiuokite jų aritmetinį vidurkį. Ir aritmetinį vidurkį atmetus tas reikšmes, kurios yra mažesnės nei 10
+            arba didesnės nei 90. Abu vidurkius atspausdinkite. Rezultatus apvalinkite iki sveiko skaičiaus. </p>
+        <p>13.Sukurkite ivykio užfiksavimą (addEventListener), įvykio pavadinimas: "keydown", jis aktyvuojasi kai
+            klaviatūroje yra paspaudžiamas bet kuris klavišas.
+            Šį įvykį priskirkite prie input laukelio ir pasiimkite laukelio reikšmę bei ją atspausdinkite puslapyje.
+            Submit mygtuko nenaudokite. Laukelyje kaskart įvedamas simbolis turi būti papildomas puslapyje.
+        </p>
+    </div>
+    <div class="container">
+    <div class="uzduotis10">
+        <button class="button" onclick="generavimas()">Generate numbers</button>
+        <p>Random numbers</p>
+        <ul>
+            <li>Random number 1: <span id="skaicius1"></span></li>
+            <li>Random number 2: <span id="skaicius2"></span></li>
+            <li>Random number 3: <span id="skaicius3"></span></li>
+            <li>Random number 4: <span id="skaicius4"></span></li>
+            <li>Amount of 0 = <span id="nuliai"></span></li>
+            <li>Amount of 1 = <span id="vienetai"></span></li>
+            <li>Amount of 2 = <span id="dvejetai"></span></li>
+        </ul>
+    </div>
+    <div class="uzduotis11">
+        <button class="button" onclick="generuoti()">Generate number</button> <br/>
+        Random number: <span id="rskaicius1"></span> <br/>
+        number+heading: <br/>
+        <span id="rezultatas1"></span>
+    </div>
+    <div class="uzduotis12">
+        <button class="button" onclick="generate()">Generate 3 numbers:</button>
+        <ul>
+            <li>1st Random number = <span id="rNumber1"></span></li>
+            <li>2nd Random number = <span id="rNumber2"></span></li>
+            <li>3rd Random number = <span id="rNumber3"></span></li>
+            <li>Average =<span id="aritmetinisVidurkis"></span></li>
+            <li>Average after deduction =<span id="Vidurkis"></span></li>
+        </ul>
+    </div>
+</div>
+    <div class="uzduotis13">
+        <input id="input" type="text" > 
+        <div id="rezultatas"></div>
+        <script> 
+            // let stringas = 'laba diena'
+            // console.log(stringas.length)
+            // Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, minima!
+
+            let x = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, minima!'
+            // skaiciavimas stringu nuo 0 prasideda
+            const input = document.getElementById('input')
+
+            input.addEventListener('keyup', event => {
+                let tekstas = input.value
+
+                if(input.value.length >= 25) {
+                    console.log('Yra')
+                    tekstas = input.value.substring(0, 25) + '<br/>'
+                    tekstas += input.value.substring(25)
+                }
+
+                //ciklas kartosis kol išsipildys sąlygą
+
+                document.getElementById('rezultatas').innerHTML = tekstas
+            })
+        </script>
+    </div>
+    <script type="text/javascript" src="./assets/js/index.js"></script>
+    <!-- <script type="text/javascript">
+        let x = false //boolean reiksme turi true arba false
+
+        if (x) {
+            console.log('X yra teigiamas')
+        }
+
+        // let skaicius = 10
+        let skaicius = 10
+        if (typeof skaicius == 'number')
+            console.log('Kintamasis yra skaicius')
+        //sudetis su operatorium
+        skaicius += + 15
+        console.log(skaicius)
+        // atimtis su operatorium
+        skaicius -= 15
+        console.log(skaicius)
+        //daugyba su operatorium
+        skaicius *= 2
+        console.log(skaicius)
+        //dalyba su operatorium
+        skaicius /= 5
+        console.log(skaicius)
+
+        //skaicius = skaicius +1
+        skaicius++
+        console.log(skaicius)
+        // skaicius = skaicius - 1
+        skaicius--
+        console.log(skaicius)
+        /// === tikrina ir reiksme ir jos tipą
+        if (skaicius === '4')
+            console.log('Skaicius yra lygus keturiems')
+        // let x = false //boolean reiksme
+        // let y = 'string' //string
+        // let z = function() {} //function
+        // let w = [] //array
+        // let q = {} //object
+        // let o = 10 // number
+        //typeof - patikrinimas reiksmes ar boolean ar astring ar kiti
+        // console.log(typeof x)
+        // skaicius = 'Tekstas'
+        //skaicius = 2 % skaicius
+        skaicius %= 9
+        console.log('Modulis ' + skaicius) -->
+    <!-- </script> -->
+</body>
+
+</html>

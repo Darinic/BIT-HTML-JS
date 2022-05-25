@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.uzduotys {
+    background-color: azure;
+    border-radius: 25px;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: 20px;
+    padding: 10px 15px;
+    width: 1800px;
+}
+.uzduotis14 {
+    background-color: beige;
+    margin: 25px 30px;
+    padding: 1px 5px;
+    width: 420px;
+    
+}
+#repeat {
+    word-break: break-all;
+}
+.uzduotis15 {
+    background-color: rgb(202, 247, 248);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 25px 30px;
+    padding: 5px 20px;
+    text-align: justify;
+}
+.uzduotis16 {
+    background-color: cornsilk;
+    border-radius: 25px;
+    margin: 25px 30px;
+    padding: 5px 20px;
+    width: fit-content;
+}
+.uzduotis17 {
+    line-height: 8px;
+    max-width: 800px;
+    max-height: 800px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.uzduotis18 {
+    background-color: antiquewhite;
+    border-radius: 25px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    width: fit-content;
+    float: left;
+}

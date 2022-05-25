@@ -1,0 +1,32 @@
+body {
+    font-family: 'Open Sans',sans-serif;
+}
+
+div {
+    list-style-type: square;
+    border: 1px solid #000;
+}
+
+.customList {
+    display: list-item;
+    list-style-type: unset;
+    border: unset;
+}
+nav {
+    background: rgb(241, 176, 241);
+}
+
+nav li{
+    display: inline-block;
+    border-right: 1px solid rgb(59, 21, 59)
+}
+nav a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: unset;
+    color: rgb(163, 56, 101);
+}
+nav li a:hover {
+    color: white;
+    background-color: rgb(36, 8, 73);
+}

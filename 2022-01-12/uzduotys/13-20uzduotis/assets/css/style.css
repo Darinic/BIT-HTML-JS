@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+header nav {
+  background-color: rgb(216, 253, 253);
+  position: fixed;
+  width: 100%;
+}
+header nav li {
+  display: inline-block;
+  border-right: 1px solid #ccc;
+}
+header nav li a {
+  display: block;
+  padding: 8px 20px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+header nav li a:hover {
+  background: rgb(126, 252, 88);
+  color: rgb(245, 39, 39);
+  cursor: cell;
+  transition-duration: 1s;
+}
+section.sekcija {
+  height: 100vh;
+}
+section.sekcija1 {
+  background: rgb(154, 154, 230);
+  background-image:url(../img/background\ 1.jpg);
+  background-repeat: no repeat;
+  background-size: 100%;
+}
+section.sekcija1 ol {
+  padding-top: 50px;
+}
+section.sekcija1 li {
+  list-style-type: decimal;
+  font-size: 20px;
+  width: 100%;
+  margin-left: 700px;
+  padding-top: 5px;
+}
+section.sekcija2 {
+  background: burlywood;
+  background-image: url(../img/background2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+section.sekcija2 h1 {
+  color: crimson;
+}
+section.sekcija2 ol {
+  padding-top: 200px;
+  float: right;
+  padding-right: 100px;
+}
+section.sekcija2 li {
+  color: violet;
+  list-style-type: square;
+  font-family: fantasy, cursive;
+  font-size: 25px;
+  padding: 5px;
+  width: 100%;
+}
+section.sekcija3 {
+  background: cornsilk;
+  background-image: url(../img/background\ 4.jpg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: 50px 480px;
+}
+section.sekcija3 ol {
+  border: 2px dotted blue;
+  border-radius: 25px;
+  display: block;
+  float: left;
+  margin-left: 100px;
+  margin-top: 350px;
+}
+section.sekcija3 li {
+  color: red;
+  font-size: 14px;
+  font-family: monospace;
+  font-weight: bolder;
+  list-style-type: circle;
+  padding: 5px 10px 10px 5px;
+}
+section.sekcija4 {
+  background: cyan;
+  background-image: url(../img/background5.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.email {
+  text-align: center;
+}
+.emailResize {
+    height: 120px;
+    opacity: .9;
+    margin: 25px 0px 15px 5px;
+    width: 240px;
+
+}
+.forma {
+  background: linear-gradient(
+    to right bottom,
+    rgb(100, 223, 240),
+    rgb(70, 145, 243));
+  border: 3px black solid;
+  border-radius: 10px;
+  display: inline-block;
+  font-family: "Russo one", sans-serif;
+  font-size: 21px;
+  padding: 20px 10px 20px 20px;
+  line-height: 35px;
+  margin-left: calc((1865px - 423.8px) / 2);
+}
+button {
+  background: rgb(67, 46, 248);
+  border-radius: 20px;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 5px 10px 5px 10px;
+  width: 150px;
+}
+
+section.sekcija4 button:hover {
+  background-color: green ;
+  transition-duration: 2s;
+  cursor: grab;
+}
+.name {
+  word-spacing: 5px;
+}
+.email1 {
+  word-spacing: 11px;
+}
+label {
+  color: rgb(0, 0, 97);
+  font-weight: bolder;
+  font-family: monospace;
+}
+section.sekcija4 .forma textarea {
+  border: 1px solid;
+  height: 100px;
+  width:300px;
+  resize: none;
+  box-sizing: border-box;
+  padding: 10px 10px 0px 10px;
+}
+.komentaruPozicija {
+  text-align: center;
+}
+section.sekcija5 {
+  background: rgb(255, 223, 142);
+  background-image: url(../img/BACKGROUND6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 20px;
+}
+.loremText {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  text-align: justify;
+  padding: 5px 100px 5px 100px;
+}
+section.sekcija5 h1 {
+  font-family: "Roboto", sans-serif;
+}
+.lorem {
+  height: 500px;
+  margin: 0px 15px 5px 100px;
+}
+
+section.sekcija6 {
+  background: rgb(236, 179, 109);
+  background-image: url(../img/war.jpg);
+  background-repeat: no-repeat;
+  background-size: 13%;
+  background-position:1620px 600px;
+}
+section.sekcija6 div.tolstojus {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
+  padding: 0px 250px 0px 250px;
+  font-size: 19px;
+}
+section.sekcija7 {
+  background: rgb(173, 250, 173);
+  background-image: url(../img/1110233.jpg);
+  background-repeat: no-repeat;
+  background-size: 500px 400px;
+  background-position: 1150px 530px;
+
+}
+.adam {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+  padding: 20px 200px 20px 200px;
+  text-align: justify;
+}
+section.sekcija8 {
+  background: rgb(238, 231, 138);
+}
+section.sekcija h1 {
+  margin: 0;
+  font-size: 50px;
+  padding-top: 10vh;
+  text-align: center;
+}

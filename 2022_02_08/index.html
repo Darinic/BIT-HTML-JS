@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //masyvas = array []
+        //Objektas = Object
+        let x = [15, 'Stringas', 30, '12']
+        x['test'] = 10 // tekstinio indekso priskyrimas
+
+        for(let i = 0; i <x.length; i++) {
+            console.log(x)
+        }
+        // Length paskaiciavimo neatitikimai
+        let y = []
+        y[0] =''
+        y[10] = 'Test'
+        y[15] = 'Test2'
+        console.log(y)
+
+        let z= [20, 50, 15 , 20 , 16]
+        //push visa laika deda nauja reiksme i masyvo pabaiga
+        z.push('Test')
+        //unshift metodas deda į reikšmės pradžią
+        z.unshift('priekyje')
+        console.log(z)
+        //shift() pasalina pacia pirma reiksme is masyvo
+        z.shift()
+        //pop() pasalina paskutine reiskme is masyvo
+        z.pop()
+
+        console.log(z)
+
+        //generuoja masyva, kurio ilgis 50 elementų
+
+        let masyvas = []
+        for(let i =0 ; i < 50; i++ ) {
+            masyvas[i] = i
+        }
+        //atsispaudiname suformuota masyva
+        console.log(masyvas)
+
+        //paimame duomenis is masyvo cikle
+        //Pakeisti kiekviena reiksme masyve, supliusuojant kiekviena einamaja su pries tai buvusia
+        for(let i = 0; i < masyvas.length; i++) {
+            if (i != masyvas.length -1)
+                 masyvas[i] += masyvas[i+1]
+    }
+    console.log(masyvas)
+    masyvas.forEach((reiksme, indeksas) => {
+        console.log(reiksme + ' Indeksas:' + indeksas)
+    } )
+
+    function test(reiksme, indeksas) {
+
+    }
+    </script>
+</body>
+</html>

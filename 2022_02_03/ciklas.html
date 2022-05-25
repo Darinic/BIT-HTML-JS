@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciklas</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="uzduotys">
+        <p> 14. Naršyklėje nupieškite linija iš 400 “*”. <br/>
+        *Naudodami css stilių “suskaldykite” liniją taip, kad visos žvaigždutės matytusi ekrane; (word-break: break-all;)<br/>
+        *Programiškai atskirkite žvaigždučių linijas taip, kad vienoje eilutėje nebūtų daugiau nei 50 “*”;</p>
+
+        <p> 15. Sugeneruokite 300 atsitiktinių skaičių nuo 0 iki 300, atspausdinkite juos atskirtus tarpais ir suskaičiuokite
+        kiek iš jų yra didesnių už 150. Skaičiai didesni nei 275 turi būti raudonos spalvos.</p>
+
+        <p> 16. Vienoje eilutėje atspausdinkite visus skaičius nuo 1 iki 3000, kurie dalijasi iš 77 be liekanos. Skaičius
+        atskirkite kableliais. Po paskutinio skaičiaus neturi būti kablelio. Jeigu reikia, panaudokite css, kad visi
+        rezultatai matytusi ekrane. <br/>
+        https://www.w3schools.com/jsref/jsref_isinteger.asp <br/>
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder </p>
+
+        <p> 17. Nupieškite kvadratą iš “*”, kurio kraštines sudaro 100 “*”. Panaudokite css stilių, kad kvadratas ekrane
+        atrodytų kvadratinis. <br/>
+        * * * * * * * * * * <br/>
+        * * * * * * * * * * <br/>
+        * * * * * * * * * * <br/>
+        * * * * * * * * * * <br/>
+        * * * * * * * * * * <br/>
+        * * * * * * * * * * <br/>
+        * * * * * * * * * * </p>
+
+        <p> 18. Benas ir Jovita žaidžia šaškėmis. Benas surenka taškų kiekį nuo 10 iki 20, Jovita surenka taškų kiekį nuo 5 iki
+        25. Jeigu, bet kuriam žaidėjui iškrenta skaičius 12, partiją laikome negaliojančia. Vienoje eilutėje išveskite
+        laimėjusio žaidėjo vardą su taškų kiekiu ir “Partiją laimėjo: ​laimėtojo vardas​”. Taškų kiekį generuokite
+        funkcija randomSkaicius()​. Žaidimą laimi tas, kas greičiau surenka 222 taškus. Partijas kartoti tol, kol
+        kažkuris žaidėjas pirmas surenka 222 arba daugiau taškų. </p>
+
+       <p> 19. Sugeneruokite 300 div elementų, kurie būtų patalpinti reletyviame tėviniame elemente kurio fiksuotas dydis būtų
+        "500 x 500"px. CSS pagalba aprašykite, jog sukurti elementai atrodytų kaip kvadratai, "5 x 5"px dydžio,
+        absoliučioje pozicijoje su uždėta kraštine ir raudonu fonu. Javascript pagalba priskirkite jiems pozicijas:
+        "top" ir "left", kurių reikšmės būtų paimtos pasinaudojant randomSkaicius(0, 550) funkcija. Suskaičiuokite ir
+        išveskite kiek elementų perkopė kraštinių ribas. </p>
+    </div>
+    <div class="uzduotis14">
+        <p><span id="repeat">dasfa</span></p>
+    </div>
+    <div class="uzduotis15">
+    <p id="skaiciai"></p>
+    <p> Kiek yra virš 150 = <span id="virs"></span></p>
+    <p> Kiek pažymėta raudonai = <span id="raudona"></span></p>
+    </div>
+    <div class="uzduotis16">
+        <p id="numeriai"></p>
+    </div>
+    <div id="kvadratasas" class="uzduotis17"></div>
+    <div class="uzduotis18">
+        <h3>Šaškes</h3>
+        <p>Partijos:<span id="matches"></span></p>
+        <p><span id="nugaletojas"></span></p>
+        <p>Negaliojančios partijos: <br/> <span id="negaliojantis"></span></p>
+
+    </div>
+    <script>
+        function randomSkaicius(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min)
+        }
+        //Ciklas -algoritmas, kuris kartoja ta patį veiksmą kol bus pasiekiamas rezultatas
+        //while ciklas
+        // true arba false
+        let kiekis = 1
+        while (kiekis < 10) {
+            console.log('Ciklas veikia')
+            kiekis++
+        }
+
+        const raides = 'ABCDEFGH'
+        let checker = 0
+        //For ciklas
+        for (let i = 0; i < raides.length; i++) {
+            // break; - nutraukia cikla.
+            console.log(raides.charAt(i))
+            //console.log('for Ciklas veikia')
+        }
+
+        let raide = raides.charAt(randomSkaicius(0, raides.length))
+        console.log('Atisiktinė raide:' + raide)
+
+        //Raidziu skaiciavimas
+
+        // let checker = 0;
+        // let
+
+        // for (let i = 0; i < 100; i++) {
+        //     let position= randomSkaicius(0, raides.length)
+
+        //     console.log(raides.charAt(position))
+        // }
+    </script>
+    <script src="./assets/javascript/index.js"></script>
+</body>
+
+</html>

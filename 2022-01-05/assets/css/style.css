@@ -1,0 +1,24 @@
+/* CSS- Cascading stylesheets */
+/* @import url (); */
+
+form {
+    background-color: rgb(96, 223, 107);
+}
+.background {
+    background-color: salmon;
+}
+.formbackground {
+    background-color: #000;
+}
+#bg {
+    background-color: rgb(240, 227, 47)!important; }
+.overridebackground { 
+    background-color: red;
+}
+.img {
+    border: 10px solid red;
+    width: 300px;
+    height: 300px;
+    margin-left: 300px;
+
+}

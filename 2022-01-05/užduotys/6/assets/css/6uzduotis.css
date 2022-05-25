@@ -1,0 +1,27 @@
+.press {
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  height: 25%;
+}
+.html,
+body {
+  margin: auto;
+  padding: auto;
+}
+.html1 {
+  width: 70px;
+  height: 70px;
+}
+.html2 {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+}
+.tim {
+  width: 200px;
+  height: 200px;
+}
+.berners {
+  text-align: center;
+}

@@ -1,0 +1,52 @@
+html, body {
+  background: linear-gradient(to bottom right, #6889ff, #c668ff);
+  height: 95vh;
+  margin: 0;
+  padding: 15px;
+  width: calc(100%-15px);
+}
+.divs {
+  column-count: 2;
+  text-align: justify;
+  column-gap: 30px;
+}
+
+.lorem1 {
+  float: left;
+  height: 100px;
+  padding: 10px;
+  width: 150px;
+}
+.lorem3 {
+  float: right;
+  padding: 10px;
+  width: 150px;
+}
+.lorem5 {
+  float: left;
+  padding: 10px;
+  width: 130px;
+}
+.par1 {
+  color: cyan;
+}
+.par2 {
+  color: darkmagenta;
+  text-align: right;
+}
+.par3 {
+  color: darkred;
+  font-size: 20px;
+}
+.par4 {
+  color: rgb(156, 6, 86);
+  font-weight: bold;
+}
+.par5 {
+  color: greenyellow;
+  font-size: 25px;
+}
+.par6 {
+  color: khaki;
+  text-align: end;
+}

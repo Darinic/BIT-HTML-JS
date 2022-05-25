@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+header nav {
+    background: rgb(224, 160, 160);
+    position: fixed;
+    width: 100%;
+}
+
+header nav li {
+    display: inline-block;
+    border-right: 1px solid #ccc;
+}
+
+header nav li a {
+    display: block;
+    padding: 8px 20px;
+    color:#000;
+    text-decoration: none;
+    font-weight: 600;
+}
+header nav li a:hover {
+    background: rgb(230, 75, 204);
+    color: #fff;
+}
+
+section.sekcija {
+    height: 100vh;
+}
+section.sekcija1 {
+    background: rgb(154, 154, 230);
+}
+section.sekcija2 {
+    background-color: burlywood;
+    background-image: url('../img/1.jpg');
+    background-repeat: no-repeat;
+    /* background paveiksliuko pozicijos nustatymas
+    background-position-x: 100px;
+    background-position-y: 100px;
+    background-position: 100px 200px; */
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+section.sekcija3 {
+    background: cornsilk;
+}
+section.sekcija4 {
+    background: cyan;
+}
+section.sekcija5 {
+    background: rgb(245, 222, 165);
+}
+section.sekcija6 {
+    background: rgb(236, 179, 109);
+}
+section.sekcija7 {
+    background: rgb(173, 250, 173);
+}
+section.sekcija8 {
+    background: rgb(238, 231, 138);
+}
+section.sekcija h1 {
+    margin: 0;
+    font-size: 50px;
+    padding-top: calc( (100vh - 50px) / 2);
+    text-align: center;
+}
+section.sekcija .innerPadding {
+    font-size: 18px;
+    padding: 5% 10% 0 20%;
+}
+section.sekcija1 .biggerFont {
+    font-size: 25px;
+}
+section.sekcija3 .contactForm {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 150px;
+}
+section.sekcija .contactForm h2 {
+    font-size: 35px;
+}
+section.sekcija .contactForm input.textInput {
+    border: 1px solid rgb(235, 88, 120);
+    box-sizing: border-box;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 0px 10px 0px 10px;
+    width: 500px;
+}
+section.sekcija .contactForm textarea.deliveryComments {
+    border: 1px solid;
+    height: 200px;
+    width:500px;
+    resize: none;
+    box-sizing: border-box;
+    padding: 10px;
+}
+section.sekcija .contactForm label.mazinimas {
+    font-size: 12px;
+}
+section.sekcija .contactForm button.submitButton {
+    border: none;
+    width: 250px;
+    height: 50px;
+    background-color: rgb(248, 152, 252);
+    color: #fff;
+}
+section.sekcija .contactForm button.submitButton:hover {
+    background-color: aqua;
+    color: red;
+    cursor: cell;
+    transition-duration: 2s;
+}

@@ -1,0 +1,45 @@
+html,
+body {
+    background: linear-gradient(to bottom right, #fdc639, #ff7c60);
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    place-items: center;
+    width: 100%;
+}
+.divs {
+    background: linear-gradient(to bottom right, #5b7fff, #33ccfc);
+    border: 3px solid black;
+    margin-left: 43%;
+    margin-top: 25%;
+    padding: 5px;
+    width: 14%;
+    text-align: center;
+}
+.button {
+    background: azure;
+    border-radius: 25px;
+    color: rgb(182, 8, 8);
+    font-family: "Bebas Neue", cursive;
+    font-weight: bolder;
+    margin-left: 31%;
+    margin-top: 5px;
+    width: 35%;
+}
+.checkbox {
+    font-family: "Bebas Neue", cursive;
+    margin-left: 30%;
+}
+.login {
+  font-family: "Moon Dance", cursive;
+  font-size: 25px;
+  font-weight: bolder;
+  margin-right: 50%;
+}
+.password {
+  font-family: "Moon Dance", cursive;
+  font-size: 25px;
+  font-weight: bolder;
+  margin-right: 40%;
+}

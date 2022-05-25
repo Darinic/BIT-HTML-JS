@@ -1,0 +1,39 @@
+body {
+  background: linear-gradient(to bottom, #ff9e68, #ff68de);
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.pavadinimas {
+  text-align: center;
+  font-size: 60px;
+  color: rgb(10, 50, 170);
+  font-family: "Shizuru", cursive;
+}
+td {
+  border: none;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+tr {
+  padding: 5px 5px 5px 5px;
+}
+.linear {
+  /* margin-left: 600px; */
+  text-align: center;
+  font-size: 30px;
+  font-family: "Shizuru", cursive;
+  color: rgb(251, 255, 0)
+}
+.testas {
+  width: 30px;
+  font-family: "shizuru", cursive;
+  color: rgb(251, 255, 0);
+  text-align: center;
+  font-size: 30px;
+}

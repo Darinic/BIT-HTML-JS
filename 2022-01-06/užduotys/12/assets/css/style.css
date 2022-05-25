@@ -1,0 +1,34 @@
+body {
+  background: #01ff70;
+  padding: 10px 35px 0px 35px;
+}
+.heading {
+  text-align: center;
+  font-family: fantasy;
+  font-size: 35px;
+}
+.par1 {
+  text-align: left;
+  font-size: 20px;
+  color: blue;
+}
+.par2 {
+  color: rgb(5, 5, 173);
+  font-size: 20px;
+  text-align: right;
+}
+.par3 {
+  color: brown;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: justify;
+}
+.par4 {
+  color: crimson;
+  font-size: 20px;
+  text-align: center;
+}
+h2 {
+  font-family: fantasy;
+  text-align: center;
+}
