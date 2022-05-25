@@ -1,4 +1,5 @@
 # Javascript Daniil Arinic
- **BIT** JavaScript ~~grupė~~
+ **BIT** JavaScript
  !
-Bit starting courses HTML/CSS/JS
+BIT starting courses HTML/CSS/JS
+Reuploaded to one repository.
